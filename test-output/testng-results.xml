@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-04-06T08:23:53 IST" name="Default suite" finished-at="2021-04-06T08:24:11 IST" duration-ms="18229">
+  <suite started-at="2021-04-07T08:31:38 IST" name="Default suite" finished-at="2021-04-07T08:31:57 IST" duration-ms="18702">
     <groups>
     </groups>
-    <test started-at="2021-04-06T08:23:53 IST" name="Default test" finished-at="2021-04-06T08:24:11 IST" duration-ms="18229">
-      <class name="com.test.actions.ScrollWindow">
-        <test-method signature="scrollPageOrWindow()[pri:0, instance:com.test.actions.ScrollWindow@d6e7bab]" started-at="2021-04-06T08:23:53 IST" name="scrollPageOrWindow" finished-at="2021-04-06T08:24:11 IST" duration-ms="18170" status="PASS">
+    <test started-at="2021-04-07T08:31:38 IST" name="Default test" finished-at="2021-04-07T08:31:57 IST" duration-ms="18702">
+      <class name="com.test.actions.FullPageScreenShotTest">
+        <test-method signature="alertAction()[pri:0, instance:com.test.actions.FullPageScreenShotTest@55b53d44]" started-at="2021-04-07T08:31:38 IST" name="alertAction" finished-at="2021-04-07T08:31:57 IST" duration-ms="18639" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- scrollPageOrWindow -->
-      </class> <!-- com.test.actions.ScrollWindow -->
+        </test-method> <!-- alertAction -->
+      </class> <!-- com.test.actions.FullPageScreenShotTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

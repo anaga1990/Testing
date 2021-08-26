@@ -4,17 +4,20 @@ public class PrivateExmodifier {
 	
 	public static void main(String[] args) {
 		PrivateExmodifier em = new PrivateExmodifier();
+		
+		//classname exREFF = new classname();
+		System.out.println(em.age); //29
+		em.age = 40;
+		System.out.println(em.age);
+		
 		em.privateMethod();
-		System.out.println("before age value change "+em.age);
-		em.age = em.age+39;
-		System.out.println("after age value change "+em.age);
 	}
 	
-	private int age= 29;
-	private void privateMethod() {
+	private int age= 29; //instance variable or non-static variable
+	void privateMethod() {
 		System.out.println("we are in private method");
 	}
 	
-	
+	// with the class
 	
 }

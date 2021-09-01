@@ -1,6 +1,6 @@
 package looping.statements.ex;
 
-public class ExOfWhileLoop {
+public class ExOfWhileLoopwithBreak {
 	public static void main(String[] args) {
 		//while(true) {
 			//execute code
@@ -10,9 +10,6 @@ public class ExOfWhileLoop {
 			System.out.println("complete your higher educaction");
 			System.out.println(a);
 			a++;
-			if(a==3) {
-				break;
-			}
 		}
 	}
 }

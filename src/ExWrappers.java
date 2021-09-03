@@ -27,9 +27,9 @@ public class ExWrappers {
 		 
 		 //Long   9223372036854775807
 		 long a = 122333443444L;
-		 float b = 123333333333333.00f;
+		 float b = 12333333333333333.0034f;
 		 Double c = 1233333333333334444444D;
-		 //default long/float/double values treated by java as intger
+		 //default long/float/double values treated by java as integer
 		 
 	}
 }

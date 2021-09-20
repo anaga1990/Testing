@@ -8,5 +8,4 @@ public class B extends A{
 		A a = new B();
 		a.dob();
 	}
-	
 }

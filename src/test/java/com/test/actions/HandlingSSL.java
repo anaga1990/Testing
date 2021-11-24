@@ -10,7 +10,7 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.Test;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 public class HandlingSSL {
 	@Test
@@ -25,7 +25,7 @@ public class HandlingSSL {
 		ChromeOptions chromeOptions = new ChromeOptions();
 		chromeOptions.merge(capabilities);
 		
-		WebDriverManager.chromedriver().setup();
+		System.setProperty("webdriver.chrome.driver", "C:/Worldline/Testing/drivers/chromedriver.exe");
 		WebDriver driver = new ChromeDriver(chromeOptions);
 		driver.get("http://api.plos.org/solr/examples/");
 	}
@@ -36,7 +36,7 @@ public class HandlingSSL {
 		FirefoxProfile profile = new FirefoxProfile();
 		profile.setAcceptUntrustedCertificates(true);
 		
-		WebDriverManager.firefoxdriver().setup();
+		//WebDriverManager.firefoxdriver().setup();
 		@SuppressWarnings("deprecation")
 		WebDriver driver = new FirefoxDriver((Capabilities) profile);
 	}

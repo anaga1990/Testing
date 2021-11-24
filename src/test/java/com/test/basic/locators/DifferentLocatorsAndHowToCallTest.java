@@ -1,6 +1,6 @@
 package com.test.basic.locators;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 public class DifferentLocatorsAndHowToCallTest {
     @Test
     public void Run(){
-        WebDriverManager.chromedriver().setup();
+        System.setProperty("webdriver.chrome.driver", "C:/Worldline/Testing/drivers/chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("disable-notifications");
         WebDriver driver = new ChromeDriver(options);

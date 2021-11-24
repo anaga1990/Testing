@@ -34,11 +34,6 @@
         </dependency>
         <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
         <!-- automatically setup browser  -->
-        <dependency>
-            <groupId>io.github.bonigarcia</groupId>
-            <artifactId>webdrivermanager</artifactId>
-            <version>4.3.1</version>
-        </dependency>
 		<!-- to tack full page screenshot below dependency required https://mvnrepository.com/artifact/ru.yandex.qatools.ashot/ashot -->
 		<dependency>
 		    <groupId>ru.yandex.qatools.ashot</groupId>

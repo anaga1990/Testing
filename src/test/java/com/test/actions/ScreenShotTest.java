@@ -10,13 +10,13 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 
 public class ScreenShotTest {
 	 @Test
 	    public void alertAction() {
-	        WebDriverManager.chromedriver().setup();
+	        System.setProperty("webdriver.chrome.driver", "C:/Worldline/Testing/drivers/chromedriver.exe");
 	        WebDriver driver =  new ChromeDriver();
 	        driver.manage().window().maximize();
 	        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);

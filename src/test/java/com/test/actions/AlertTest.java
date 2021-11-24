@@ -1,6 +1,6 @@
 package com.test.actions;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.testng.annotations.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 public class AlertTest {
     @Test
     public void alertAction() throws InterruptedException {
-        WebDriverManager.chromedriver().setup();
+        System.setProperty("webdriver.chrome.driver", "C:/Worldline/Testing/drivers/chromedriver.exe");
         WebDriver driver =  new ChromeDriver();
         driver.get("https://rahulshettyacademy.com/AutomationPractice/");
         driver.manage().window().maximize();

@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import ru.yandex.qatools.ashot.AShot;
 import ru.yandex.qatools.ashot.Screenshot;
 import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
@@ -19,7 +19,7 @@ import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 public class FullPageScreenShotTest {
 	 @Test
 	    public void alertAction() throws IOException {
-	        WebDriverManager.chromedriver().setup();
+	        System.setProperty("webdriver.chrome.driver", "C:/Worldline/Testing/drivers/chromedriver.exe");
 	        WebDriver driver =  new ChromeDriver();
 	        driver.manage().window().maximize();
 	        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);

@@ -1,6 +1,6 @@
 package com.test.actions;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
 public class GreenKartTest {
     @Test
     public void addVegetabulesToCart() throws InterruptedException{
-        WebDriverManager.chromedriver().setup();
+        System.setProperty("webdriver.chrome.driver", "C:/Worldline/Testing/drivers/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();

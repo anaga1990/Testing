@@ -24,6 +24,5 @@ public class Exframes4 {
 		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@src='SingleFrame.html']"))); // nested or child frame
 		driver.findElement(By.xpath("//input[@type='text']")).sendKeys("selenium");
 		
-		
 	}
 }

@@ -1,24 +1,23 @@
-package day5;
+package day9;
 
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.interactions.Actions;
 
-public class AutoSuggestive3 {
+public class KeyboardsEvents4 {
 	static {
 		System.setProperty("webdriver.chrome.driver",
 				"C:/WorldlineProject/Workspace/Test/SeleniumDemo/drivers/chromedriver.exe");
 	}
-
 	public static WebDriver driver;
-
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		try {
+			
 			ChromeOptions chromeOptions = new ChromeOptions();
 			chromeOptions.addArguments("--disable-extensions");
 			driver = new ChromeDriver(chromeOptions);
@@ -26,24 +25,33 @@ public class AutoSuggestive3 {
 			driver.manage().window().maximize();
 			driver.manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
 			driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-			driver.get("https://www.amazon.in/");
-			driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']")).sendKeys("lenovo");
-			List<WebElement> list = driver.findElements(By.xpath("//div[@class='s-suggestion']"));
-			for (WebElement webElement : list) {
-				System.out.println(webElement.getText());
-				if (webElement.getText().equals("lenovo ideapad")) {
-					webElement.click();
-					break;
-				}
-			}
+			driver.get("https://text-compare.com/");
+			driver.findElement(By.xpath("//textarea[@id='inputText1']")).sendKeys("Hi, welcome to evening batch");
+			
+			Actions actions = new Actions(driver); 
+			
+			//ctrl + a
+			actions.keyDown(Keys.CONTROL);
+			actions.sendKeys("a");
+			actions.keyUp(Keys.CONTROL);
+			actions.build().perform();
+			Thread.sleep(2000);
+			//ctrl +c
+			actions.keyDown(Keys.CONTROL);
+			actions.sendKeys("c");
+			actions.keyUp(Keys.CONTROL);
+			actions.build().perform();
+			Thread.sleep(2000);
+			//tab
+			actions.sendKeys(Keys.TAB).perform();
+			Thread.sleep(2000);
+			//ctrl + v
+			actions.keyDown(Keys.CONTROL);
+			actions.sendKeys("v");
+			actions.keyUp(Keys.CONTROL);
+			actions.build().perform();
 			System.out.println("Jobs Success");
 			
-			// Inspect element
-			// click on sources tab
-			// type  in search bar
-			// 'F8' key in keyboard
-			// click on elements tab
-			//"//div[@class='s-suggestion']/span[2]"
 		} finally {
 			try {
 				Thread.sleep(4000);

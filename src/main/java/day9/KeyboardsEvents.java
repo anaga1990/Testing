@@ -1,24 +1,23 @@
-package day5;
+package day9;
 
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.interactions.Actions;
 
-public class AutoSuggestive3 {
+public class KeyboardsEvents {
 	static {
 		System.setProperty("webdriver.chrome.driver",
 				"C:/WorldlineProject/Workspace/Test/SeleniumDemo/drivers/chromedriver.exe");
 	}
-
 	public static WebDriver driver;
-
 	public static void main(String[] args) {
 		try {
+			
 			ChromeOptions chromeOptions = new ChromeOptions();
 			chromeOptions.addArguments("--disable-extensions");
 			driver = new ChromeDriver(chromeOptions);
@@ -28,22 +27,18 @@ public class AutoSuggestive3 {
 			driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 			driver.get("https://www.amazon.in/");
 			driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']")).sendKeys("lenovo");
-			List<WebElement> list = driver.findElements(By.xpath("//div[@class='s-suggestion']"));
-			for (WebElement webElement : list) {
-				System.out.println(webElement.getText());
-				if (webElement.getText().equals("lenovo ideapad")) {
-					webElement.click();
-					break;
-				}
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
 			}
+			Actions actions = new Actions(driver);
+			actions.sendKeys(Keys.ARROW_DOWN).perform();
+			actions.sendKeys(Keys.ENTER).perform();
+			
 			System.out.println("Jobs Success");
 			
-			// Inspect element
-			// click on sources tab
-			// type  in search bar
-			// 'F8' key in keyboard
-			// click on elements tab
-			//"//div[@class='s-suggestion']/span[2]"
 		} finally {
 			try {
 				Thread.sleep(4000);

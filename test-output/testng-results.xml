@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-12-24T00:41:27 IST" name="Suite" finished-at="2021-12-24T00:41:38 IST" duration-ms="10675">
+    <groups>
+    </groups>
+    <test started-at="2021-12-24T00:41:27 IST" name="Test" finished-at="2021-12-24T00:41:38 IST" duration-ms="10675">
+      <class name="com.qa.scenarios.BankLoginTest">
+        <test-method is-config="true" signature="browserSetup(java.lang.String)[pri:0, instance:com.qa.scenarios.BankLoginTest@4944252c]" started-at="2021-12-24T00:41:27 IST" name="browserSetup" finished-at="2021-12-24T00:41:35 IST" duration-ms="8469" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method signature="bank()[pri:0, instance:com.qa.scenarios.BankLoginTest@4944252c]" started-at="2021-12-24T00:41:35 IST" name="bank" finished-at="2021-12-24T00:41:37 IST" duration-ms="1946" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bank -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:com.qa.scenarios.BankLoginTest@4944252c]" started-at="2021-12-24T00:41:37 IST" name="browserClose" finished-at="2021-12-24T00:41:38 IST" duration-ms="217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- com.qa.scenarios.BankLoginTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

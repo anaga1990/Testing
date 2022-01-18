@@ -1,0 +1,5 @@
+com\qa\util\ConfigManager.class
+com\qa\util\WaitsManager.class
+com\qa\util\UserWait.class
+com\qa\core\DriverManager.class
+com\qa\util\Reuse.class

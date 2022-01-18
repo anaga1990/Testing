@@ -1,6 +1,4 @@
-C:\Worldline\Cucumber\E2e-CucumberWS\E2ECucumberFrameworkWithTestNg\src\test\java\parallel\LoginPageSteps.java
-C:\Worldline\Cucumber\E2e-CucumberWS\E2ECucumberFrameworkWithTestNg\src\test\java\testrunners\MyTestRunner.java
-C:\Worldline\Cucumber\E2e-CucumberWS\E2ECucumberFrameworkWithTestNg\src\test\java\parallel\HooksManager.java
-C:\Worldline\Cucumber\E2e-CucumberWS\E2ECucumberFrameworkWithTestNg\src\test\java\parallel\AccountPageSteps.java
-C:\Worldline\Cucumber\E2e-CucumberWS\E2ECucumberFrameworkWithTestNg\src\test\java\parallel\CommomPageSteps.java
-C:\Worldline\Cucumber\E2e-CucumberWS\E2ECucumberFrameworkWithTestNg\src\test\java\parallel\ParallelRun.java
+C:\Worldline\Cucumber\E2e-CucumberWS\E2ECucumberTestNgORM\src\test\java\parallel\HomePageSteps.java
+C:\Worldline\Cucumber\E2e-CucumberWS\E2ECucumberTestNgORM\src\test\java\parallel\LoginPageSteps.java
+C:\Worldline\Cucumber\E2e-CucumberWS\E2ECucumberTestNgORM\src\test\java\parallel\ParallelRun.java
+C:\Worldline\Cucumber\E2e-CucumberWS\E2ECucumberTestNgORM\src\test\java\parallel\HooksManager.java

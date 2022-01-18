@@ -2,8 +2,6 @@ package com.qa.page;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 
 public class LoginPage {
 
@@ -13,11 +11,10 @@ public class LoginPage {
 	private By sigin = By.xpath("//input[@id='btnLogin']");
 	private By incorrectLoginAlert = By.xpath("//span[@id='spanMessage']");
 	
-	@FindBy(xpath = "//a[@id='welcome']")
-	WebElement userProfile;
+	By userProfile=By.xpath("//a[@id='welcome']");
 	
-	@FindBy(xpath = "//a[normalize-space()='Logout']")
-	WebElement signout;
+	By signout = By.xpath("//a[normalize-space()='Logout']");
+	
 	
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
@@ -29,9 +26,8 @@ public class LoginPage {
 		driver.findElement(password).sendKeys(passwordText);
 	}
 
-	public HomePage clickOnSigin() {
+	public void clickOnSigin() {
 		driver.findElement(sigin).click();
-		return new HomePage(driver);
 	}
 
 	public String getTitle() {
@@ -51,8 +47,8 @@ public class LoginPage {
 	}
 	
 	public void signOutAccount() {
-		userProfile.click();
-		signout.click();
+		driver.findElement(userProfile).click();
+		driver.findElement(signout).click();
 	}
 	
 }

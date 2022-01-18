@@ -1,27 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="32138" started-at="2022-01-18T06:34:02Z" finished-at="2022-01-18T06:34:35Z">
+  <suite name="Surefire suite" duration-ms="30871" started-at="2022-01-18T07:52:57Z" finished-at="2022-01-18T07:53:28Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@2b98378d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@28feb3fa]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Surefire test" duration-ms="32138" started-at="2022-01-18T06:34:02Z" finished-at="2022-01-18T06:34:35Z">
+    <test name="Surefire test" duration-ms="30871" started-at="2022-01-18T07:52:57Z" finished-at="2022-01-18T07:53:28Z">
       <class name="parallel.ParallelRun">
-        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:parallel.ParallelRun@2b98378d]" name="setUpClass" is-config="true" duration-ms="688" started-at="2022-01-18T06:34:02Z" finished-at="2022-01-18T06:34:03Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:parallel.ParallelRun@28feb3fa]" name="setUpClass" is-config="true" duration-ms="1032" started-at="2022-01-18T07:52:57Z" finished-at="2022-01-18T07:52:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@28feb3fa]" name="runScenario" duration-ms="21170" started-at="2022-01-18T07:52:58Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-18T07:53:19Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@78c03f1f]]>
+                <![CDATA["Login Application with existing user"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[LoginPage Automation]"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@2b98378d]" name="runScenario" duration-ms="24650" started-at="2022-01-18T06:34:03Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-18T06:34:28Z">
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@28feb3fa]" name="runScenario" duration-ms="21724" started-at="2022-01-18T07:52:58Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-18T07:53:19Z">
           <params>
             <param index="0">
               <value>
@@ -37,7 +46,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@2b98378d]" name="runScenario" duration-ms="28355" started-at="2022-01-18T06:34:03Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-18T06:34:31Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@28feb3fa]" name="runScenario" duration-ms="25960" started-at="2022-01-18T07:52:58Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-18T07:53:24Z">
           <params>
             <param index="0">
               <value>
@@ -53,7 +62,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@2b98378d]" name="runScenario" duration-ms="19061" started-at="2022-01-18T06:34:03Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-18T06:34:22Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@28feb3fa]" name="runScenario" duration-ms="15763" started-at="2022-01-18T07:52:58Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-18T07:53:14Z">
           <params>
             <param index="0">
               <value>
@@ -69,31 +78,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@2b98378d]" name="runScenario" duration-ms="23868" started-at="2022-01-18T06:34:03Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-18T06:34:27Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Login Application with existing user"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[LoginPage Automation]"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at parallel.LoginPageSteps.logout_User(LoginPageSteps.java:57)
-at ✽.logout User(classpath:parallel/LoginPage.feature:27)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:parallel.ParallelRun@2b98378d]" name="tearDownClass" is-config="true" duration-ms="3072" started-at="2022-01-18T06:34:31Z" finished-at="2022-01-18T06:34:35Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:parallel.ParallelRun@28feb3fa]" name="tearDownClass" is-config="true" duration-ms="3853" started-at="2022-01-18T07:53:24Z" finished-at="2022-01-18T07:53:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

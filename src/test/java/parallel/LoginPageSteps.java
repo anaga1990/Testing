@@ -2,10 +2,9 @@ package parallel;
 
 import java.util.Properties;
 
-import org.junit.Assert;
+import org.testng.Assert;
 
 import com.qa.core.DriverManager;
-import com.qa.page.HomePage;
 import com.qa.page.LoginPage;
 import com.qa.util.ConfigManager;
 
@@ -19,7 +18,6 @@ public class LoginPageSteps {
 	private LoginPage loginPage = new LoginPage(DriverManager.getDriver());
 	public ConfigManager configManager = new ConfigManager();
 	Properties prop = configManager.initProperties();
-	private HomePage homePage;
 
 	@Given("user should be login page")
 	public void user_should_be_login_page() {
@@ -54,6 +52,6 @@ public class LoginPageSteps {
 	
 	@And("logout User")
 	public void logout_User() {
-		homePage.signOutAccount();
+		loginPage.signOutAccount();
 	}
 }

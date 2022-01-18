@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Surefire_suite">
-              <span class="suite-name border-failed">Surefire suite</span>
+              <span class="suite-name border-passed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
-                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Surefire_suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="parallel.ParallelRun" hash-for-method="runScenario(&quot;Login Application with existing user&quot;, &quot;Optional[LoginPage Automation]&quot;)">runScenario("Login Application with existing user", "Optional[LoginPage Automation]")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -116,7 +102,7 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="parallel.ParallelRun" hash-for-method="runScenario(&quot;Login Application with unknow user&quot;, &quot;Optional[LoginPage Automation]&quot;)">runScenario("Login Application with unknow user", "Optional[LoginPage Automation]")</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="parallel.ParallelRun" hash-for-method="runScenario(&quot;Login Application with existing user&quot;, &quot;Optional[LoginPage Automation]&quot;)">runScenario("Login Application with existing user", "Optional[LoginPage Automation]")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -127,6 +113,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="parallel.ParallelRun" hash-for-method="runScenario(&quot;Verify User details in Admin menu&quot;, &quot;Optional[Account Page Validation]&quot;)">runScenario("Verify User details in Admin menu", "Optional[Account Page Validation]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="parallel.ParallelRun" hash-for-method="runScenario(&quot;Login Application with unknow user&quot;, &quot;Optional[LoginPage Automation]&quot;)">runScenario("Login Application with unknow user", "Optional[LoginPage Automation]")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -141,9 +132,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
-          <div class="suite-Surefire_suite-class-failed">
+          <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">parallel.ParallelRun</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -153,29 +144,6 @@
                   </a> <!-- runScenario("Login Application with existing user", "Optional[LoginPage Automation]") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Login Application with existing user", "Optional[LoginPage Automation]")</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at parallel.LoginPageSteps.logout_User(LoginPageSteps.java:57)
-	at ✽.logout User(classpath:parallel/LoginPage.feature:27)
-
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-failed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">parallel.ParallelRun</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Login Application with unknow user&quot;, &quot;Optional[LoginPage Automation]&quot;)">
-                  </a> <!-- runScenario("Login Application with unknow user", "Optional[LoginPage Automation]") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Login Application with unknow user", "Optional[LoginPage Automation]")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -196,6 +164,16 @@
                   </a> <!-- runScenario("Verify User details in Admin menu", "Optional[Account Page Validation]") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Verify User details in Admin menu", "Optional[Account Page Validation]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login Application with unknow user&quot;, &quot;Optional[LoginPage Automation]&quot;)">
+                  </a> <!-- runScenario("Login Application with unknow user", "Optional[LoginPage Automation]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login Application with unknow user", "Optional[LoginPage Automation]")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -265,19 +243,19 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'parallel.ParallelRun')
-data.setCell(0, 3, 28355);
+data.setCell(0, 3, 25960);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'parallel.ParallelRun')
-data.setCell(1, 3, 24650);
+data.setCell(1, 3, 21724);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'parallel.ParallelRun')
-data.setCell(2, 3, 23868);
+data.setCell(2, 3, 21170);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'parallel.ParallelRun')
-data.setCell(3, 3, 19061);
+data.setCell(3, 3, 15763);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
@@ -310,30 +288,28 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">parallel.ParallelRun</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@78c03f1f)</span>
+                <span class="method-name">setUpClass</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("Verify User details in Admin menu", "Optional[Account Page Validation]")</span>
-                <span class="method-start">699 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Verify HomePage Menu Details", "Optional[Account Page Validation]")</span>
-                <span class="method-start">699 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">runScenario("Login Application with existing user", "Optional[LoginPage Automation]")</span>
-                <span class="method-start">709 ms</span>
+                <span class="method-start">1048 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify User details in Admin menu", "Optional[Account Page Validation]")</span>
+                <span class="method-start">1048 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Login Application with unknow user", "Optional[LoginPage Automation]")</span>
-                <span class="method-start">709 ms</span>
+                <span class="method-start">1048 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify HomePage Menu Details", "Optional[Account Page Validation]")</span>
+                <span class="method-start">1048 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">29057 ms</span>
+                <span class="method-start">27008 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

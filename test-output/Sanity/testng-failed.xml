@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="methods" name="Failed suite [Sanity]" guice-stage="DEVELOPMENT">
+  <test thread-count="4" parallel="methods" name="Quick(failed)">
+    <classes>
+      <class name="com.happyslearning.e2e.Guru99.telecom.pages.AddTariffPlanToCustomerPageTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="addTariffPlanToCustomerTest"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- com.happyslearning.e2e.Guru99.telecom.pages.AddTariffPlanToCustomerPageTest -->
+      <class name="com.happyslearning.e2e.Guru99.telecom.pages.AddTariffPlanPageTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="preCondition"/>
+          <include name="addTariffPlanTest"/>
+        </methods>
+      </class> <!-- com.happyslearning.e2e.Guru99.telecom.pages.AddTariffPlanPageTest -->
+      <class name="com.happyslearning.e2e.Guru99.telecom.pages.PayBillingPageTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="preCondition"/>
+          <include name="addTariffPlanToCustomerTest"/>
+        </methods>
+      </class> <!-- com.happyslearning.e2e.Guru99.telecom.pages.PayBillingPageTest -->
+      <class name="com.happyslearning.e2e.Guru99.telecom.pages.AddCustomerPageTest">
+        <methods>
+          <include name="closeActions"/>
+          <include name="addCustomerActionTest"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- com.happyslearning.e2e.Guru99.telecom.pages.AddCustomerPageTest -->
+    </classes>
+  </test> <!-- Quick(failed) -->
+</suite> <!-- Failed suite [Sanity] -->

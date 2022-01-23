@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-01-23T19:37:21 IST" name="Suite" finished-at="2022-01-23T19:38:11 IST" duration-ms="49825">
+    <groups>
+      <group name="addplanToCus">
+        <method signature="AddTariffPlanToCustomerPageTest.addTariffPlanToCustomerTest()[pri:0, instance:com.happyslearning.e2e.Guru99.telecom.pages.AddTariffPlanToCustomerPageTest@57d7f8ca]" name="addTariffPlanToCustomerTest" class="com.happyslearning.e2e.Guru99.telecom.pages.AddTariffPlanToCustomerPageTest"/>
+      </group> <!-- addplanToCus -->
+      <group name="customer">
+        <method signature="AddCustomerPageTest.addCustomerActionTest()[pri:0, instance:com.happyslearning.e2e.Guru99.telecom.pages.AddCustomerPageTest@76c3e77a]" name="addCustomerActionTest" class="com.happyslearning.e2e.Guru99.telecom.pages.AddCustomerPageTest"/>
+      </group> <!-- customer -->
+    </groups>
+    <test started-at="2022-01-23T19:37:21 IST" name="Test" finished-at="2022-01-23T19:38:11 IST" duration-ms="49825">
+      <class name="com.happyslearning.e2e.Guru99.telecom.pages.AddCustomerPageTest">
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:com.happyslearning.e2e.Guru99.telecom.pages.AddCustomerPageTest@76c3e77a]" started-at="2022-01-23T19:37:22 IST" name="preCondition" finished-at="2022-01-23T19:37:35 IST" duration-ms="13368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="addCustomerActionTest()[pri:0, instance:com.happyslearning.e2e.Guru99.telecom.pages.AddCustomerPageTest@76c3e77a]" started-at="2022-01-23T19:37:35 IST" name="addCustomerActionTest" finished-at="2022-01-23T19:37:57 IST" duration-ms="22206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCustomerActionTest -->
+        <test-method is-config="true" signature="closeActions()[pri:0, instance:com.happyslearning.e2e.Guru99.telecom.pages.AddCustomerPageTest@76c3e77a]" started-at="2022-01-23T19:37:57 IST" name="closeActions" finished-at="2022-01-23T19:37:57 IST" duration-ms="335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeActions -->
+      </class> <!-- com.happyslearning.e2e.Guru99.telecom.pages.AddCustomerPageTest -->
+      <class name="com.happyslearning.e2e.Guru99.telecom.pages.AddTariffPlanPageTest">
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:com.happyslearning.e2e.Guru99.telecom.pages.AddTariffPlanPageTest@78123e82]" started-at="2022-01-23T19:37:22 IST" name="preCondition" finished-at="2022-01-23T19:37:36 IST" duration-ms="13956" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="addTariffPlanTest()[pri:0, instance:com.happyslearning.e2e.Guru99.telecom.pages.AddTariffPlanPageTest@78123e82]" started-at="2022-01-23T19:37:36 IST" name="addTariffPlanTest" finished-at="2022-01-23T19:37:55 IST" duration-ms="19976" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addTariffPlanTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.happyslearning.e2e.Guru99.telecom.pages.AddTariffPlanPageTest@78123e82]" started-at="2022-01-23T19:37:55 IST" name="afterMethod" finished-at="2022-01-23T19:37:57 IST" duration-ms="1755" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.happyslearning.e2e.Guru99.telecom.pages.AddTariffPlanPageTest -->
+      <class name="com.happyslearning.e2e.Guru99.telecom.pages.AddTariffPlanToCustomerPageTest">
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:com.happyslearning.e2e.Guru99.telecom.pages.AddTariffPlanToCustomerPageTest@57d7f8ca]" started-at="2022-01-23T19:37:22 IST" name="preCondition" finished-at="2022-01-23T19:37:37 IST" duration-ms="15130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="addTariffPlanToCustomerTest()[pri:0, instance:com.happyslearning.e2e.Guru99.telecom.pages.AddTariffPlanToCustomerPageTest@57d7f8ca]" started-at="2022-01-23T19:37:37 IST" name="addTariffPlanToCustomerTest" finished-at="2022-01-23T19:37:56 IST" duration-ms="18830" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addTariffPlanToCustomerTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.happyslearning.e2e.Guru99.telecom.pages.AddTariffPlanToCustomerPageTest@57d7f8ca]" started-at="2022-01-23T19:37:56 IST" name="afterMethod" finished-at="2022-01-23T19:37:57 IST" duration-ms="1177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.happyslearning.e2e.Guru99.telecom.pages.AddTariffPlanToCustomerPageTest -->
+      <class name="com.happyslearning.e2e.Guru99.telecom.pages.PayBillingPageTest">
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:com.happyslearning.e2e.Guru99.telecom.pages.PayBillingPageTest@1613674b]" started-at="2022-01-23T19:37:57 IST" name="preCondition" finished-at="2022-01-23T19:38:04 IST" duration-ms="6533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="addTariffPlanToCustomerTest()[pri:0, instance:com.happyslearning.e2e.Guru99.telecom.pages.PayBillingPageTest@1613674b]" started-at="2022-01-23T19:38:04 IST" name="addTariffPlanToCustomerTest" depends-on-groups="addplanToCus, customer" finished-at="2022-01-23T19:38:11 IST" duration-ms="6976" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addTariffPlanToCustomerTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.happyslearning.e2e.Guru99.telecom.pages.PayBillingPageTest@1613674b]" started-at="2022-01-23T19:38:11 IST" name="afterMethod" finished-at="2022-01-23T19:38:11 IST" duration-ms="295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.happyslearning.e2e.Guru99.telecom.pages.PayBillingPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

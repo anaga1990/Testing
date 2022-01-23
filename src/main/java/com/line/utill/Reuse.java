@@ -1,4 +1,4 @@
-package com.ine.utill;
+package com.line.utill;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;

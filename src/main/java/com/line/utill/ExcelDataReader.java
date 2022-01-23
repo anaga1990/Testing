@@ -1,4 +1,4 @@
-package com.ine.utill;
+package com.line.utill;
 
 import java.io.File;
 import java.io.FileInputStream;

@@ -1,0 +1,16 @@
+package cucumber.test.managers;
+
+import org.junit.runner.RunWith;
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features = "src/test/resources/com/api/features/PlaceAPIE2E.feature",
+					glue = {"com.api.glues" }, 
+					tags = "@DeletePlace and @Functional",
+					stepNotifications = true,
+					monochrome = true)
+public class TestRunner3 {
+	
+}

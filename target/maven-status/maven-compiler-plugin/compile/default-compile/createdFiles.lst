@@ -1,0 +1,8 @@
+com\api\addplace\pojo\UpdateMapsPojo.class
+com\api\util\RestApiUtil.class
+com\test\Props.class
+com\test\FileOutputStreamExample.class
+com\api\addplace\pojo\DeleteMapPojo.class
+com\api\addplace\pojo\AddMapsPojo.class
+com\api\util\RandamData.class
+com\api\addplace\pojo\Location.class

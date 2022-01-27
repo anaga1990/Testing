@@ -1,0 +1,7 @@
+cucumber\test\managers\TestRunner.class
+com\api\glues\Hooks.class
+com\api\test\util\PropertiesManager.class
+com\api\test\data\ApiTestDataManager.class
+com\api\test\util\TestUtil.class
+com\api\glues\PlaceGlue.class
+com\api\test\util\ApiResources.class

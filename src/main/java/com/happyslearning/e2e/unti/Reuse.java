@@ -7,9 +7,11 @@ import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class Reuse {
 
@@ -21,6 +23,7 @@ public class Reuse {
 		}
 		driver.switchTo().frame("google_ads_iframe_/24132379/INTERSTITIAL_DemoGuru99_0");
 		driver.findElement(By.cssSelector("svg")).click();
+		//jsElementClick(driver, driver.findElement(By.cssSelector("svg")));
 	}
 
 	public static void screeShot(WebDriver driver) {
@@ -31,7 +34,7 @@ public class Reuse {
 		StackTraceElement[] stactrace = Thread.currentThread().getStackTrace();
 		StackTraceElement element = stactrace[3];
 		String testMethod = element.getClassName();
-		System.out.println(element.getMethodName());
+		//System.out.println(element.getMethodName());
 
 		/**
 		 * getScreenshotAs method to take screen shot
@@ -59,5 +62,10 @@ public class Reuse {
 			e.printStackTrace();
 		}
 
+	}
+	
+	public static void jsElementClick(WebDriver driver, WebElement element) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", element);
 	}
 }

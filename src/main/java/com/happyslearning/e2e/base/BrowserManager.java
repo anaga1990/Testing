@@ -1,6 +1,5 @@
 package com.happyslearning.e2e.base;
 
-import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -10,19 +9,17 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
-import com.happyslearning.e2e.unti.PropertiesFactory;
+import com.happyslearning.e2e.unti.PropsMgr;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BrowserManager {
 	public WebDriver driver;
-	public Properties prop;
 	public static ThreadLocal<WebDriver> mangeDriverThread = new ThreadLocal<WebDriver>();
 	
 	public WebDriver startTheBrowser() {
-		prop = PropertiesFactory.loadPropertieFile();
-		String browserName = prop.getProperty("browser");
-		String isHeadlss = prop.getProperty("browser_headless");
+		String browserName = PropsMgr.getGlobalProp("browser");
+		String isHeadlss = PropsMgr.getGlobalProp("browser_headless");
 		System.out.println("browserName used for Test is : "+browserName);
 		if (browserName.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
@@ -69,7 +66,7 @@ public class BrowserManager {
 	}
 	
 	public void openApplication() {
-		getDriver().get(prop.getProperty("baseurl"));
+		getDriver().get(PropsMgr.getGlobalProp("baseurl"));
 	}
 	
 }

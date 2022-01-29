@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="4" parallel="methods" name="Sanity">
+	<listeners>
+		<listener
+			class-name="com.happyslearning.e2e.reports.ListenerManager" />
+	</listeners>
 	<test thread-count="4" parallel="methods" name="Quick">
 		<classes>
-
 			<class
 				name="com.happyslearning.e2e.Guru99.telecom.pages.AddCustomerPageTest" />
 			<class

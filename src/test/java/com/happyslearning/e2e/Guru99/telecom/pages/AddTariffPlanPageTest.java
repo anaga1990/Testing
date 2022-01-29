@@ -3,7 +3,7 @@ package com.happyslearning.e2e.Guru99.telecom.pages;
 import org.testng.annotations.Test;
 
 import com.happyslearning.e2e.base.BrowserManager;
-import com.happyslearning.e2e.unti.PropertiesFactory;
+import com.happyslearning.e2e.unti.PropsMgr;
 import com.happyslearning.e2e.unti.RandomDataManager;
 
 import org.testng.annotations.BeforeMethod;
@@ -27,7 +27,7 @@ public class AddTariffPlanPageTest {
 		String freeLocalMits=String.valueOf(RandomDataManager.getRandomNumber(2000));
 		String localPerMinutesChargesInRupes=String.valueOf(RandomDataManager.getRandomNumber(3));
 		addTariffPlanPage.addTariffPlan(monthlyRentalInRupes, freeLocalMits, localPerMinutesChargesInRupes);
-		PropertiesFactory.setProp(dataFile, "monthlyRentalInRupes", monthlyRentalInRupes, false);
+		PropsMgr.setProp("monthlyRentalInRupes", monthlyRentalInRupes);
 		String actualMessage = addTariffPlanPage.getConformation();
 		Assert.assertEquals(actualMessage, "congratulation you add tariff plan");
 	}

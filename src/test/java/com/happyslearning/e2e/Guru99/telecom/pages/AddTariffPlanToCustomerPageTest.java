@@ -3,11 +3,9 @@ package com.happyslearning.e2e.Guru99.telecom.pages;
 import org.testng.annotations.Test;
 
 import com.happyslearning.e2e.base.BrowserManager;
-import com.happyslearning.e2e.unti.PropertiesFactory;
+import com.happyslearning.e2e.unti.PropsMgr;
 
 import org.testng.annotations.BeforeMethod;
-
-import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
@@ -16,15 +14,13 @@ public class AddTariffPlanToCustomerPageTest {
 
 	private WebDriver driver;
 	BrowserManager browserManager = new BrowserManager();
-	String dataFile = "/src/test/resources/testData.properties";
-	Properties properties = PropertiesFactory.loadPropertieFile(dataFile);
 
 	@Test(groups = {"addplanToCus"})
 	public void addTariffPlanToCustomerTest() {
 		TeleComHomePage teleComHomePage = new TeleComHomePage(driver);
 		AddTariffPlanToCustomerPage addTariffPlanToCustomerPage = teleComHomePage.navigateToAddTariffPlanToCustomer();
 		String actualMesage = addTariffPlanToCustomerPage
-				.addTariffPlanToCustomerSim(properties.getProperty("customerId"));
+				.addTariffPlanToCustomerSim(PropsMgr.getProp("customerId"));
 		System.out.println(actualMesage);
 	}
 
